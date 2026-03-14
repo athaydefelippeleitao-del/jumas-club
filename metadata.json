@@ -1,0 +1,7 @@
+{
+  "name": "Remix: JUMAS CLUB 3.0",
+  "description": "A music chords and tabs application similar to Cifra Club.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
