@@ -5,6 +5,11 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
@@ -25,7 +30,7 @@ async function startServer() {
   app.use(express.json({ limit: '100mb' }));
   app.use(express.urlencoded({ limit: '100mb', extended: true }));
   app.use(cookieParser());
-  app.use(express.static('public'));
+  app.use(express.static(path.join(__dirname, 'public')));
 
   // Global middleware to track activity
   app.use(async (req, res, next) => {
