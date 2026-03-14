@@ -1,0 +1,21 @@
+{
+  "name": "Jumas Club",
+  "short_name": "Jumas",
+  "description": "Cancioneiro Jumas - Músicas, Cifras e Mais",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#006400",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
